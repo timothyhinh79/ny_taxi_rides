@@ -35,6 +35,6 @@ SELECT
 FROM {{ source('staging', 'green_tripdata_partitioned') }}
 WHERE vendorid IS NOT NULL
 
-{% if var('is_test_run', default=true) %}
+{% if var('is_test_run', default=false) %}
     LIMIT 100
 {% endif %}
