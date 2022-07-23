@@ -204,7 +204,7 @@ models:
             tests:
                 - unique:
                     severity: warn
-                - not null:
+                - not_null:
                     severity: warn
           - name: dispatching_base_num
             description: The TLC Base License Number of the base that dispatched the trip
