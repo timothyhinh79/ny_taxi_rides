@@ -233,6 +233,6 @@ models:
               For non-shared rides, this field is null.
             tests:
                 - accepted_values:
-                    values: [1, NULL]
+                    values: [1]
                     quote: false
 
